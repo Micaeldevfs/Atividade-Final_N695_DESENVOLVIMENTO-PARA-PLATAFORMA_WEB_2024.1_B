@@ -10,7 +10,7 @@
 <body>
     {% include 'navbar.html' %}
     <div class="container text-center">
-        <h1 class="my-5">Bem-vindo ao Sistema</h1>
+        <h1 class="my-5">Bem-vindo a o Whatsbot Unifor</h1>
         <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
         <a href="{{ url_for('cadastro') }}" class="btn btn-secondary">Cadastrar</a>
     </div>
@@ -18,7 +18,7 @@
         <h2 class="mb-4">Transforme o Atendimento da Sua Empresa com um Chatbot de WhatsApp</h2>
         <p>Com a nossa solução de chatbot de WhatsApp, você pode automatizar o atendimento ao cliente de forma prática e eficaz. Não perca mais tempo com respostas manuais! Deixe que o chatbot responda às dúvidas de seus clientes 24/7, oferecendo uma experiência ágil e sem erros.</p>
         <p>Não importa o tamanho da sua empresa, nós oferecemos a tecnologia necessária para elevar seu atendimento ao próximo nível. Além disso, o processo é simples, seguro e completamente integrado ao WhatsApp!</p>
-        <a href="#contato" class="btn btn-success my-3">Saiba Mais</a>
+        <a href="{{ url_for('contatos') }}" class="btn btn-success my-3">Saiba Mais</a>
     </div>
     
     <div class="container">
@@ -27,7 +27,7 @@
                 <img src="{{ url_for('static', filename='images/chatbot1.png') }}" class="img-fluid" alt="Chatbot de WhatsApp">
             </div>
             <div class="col-12 col-md-6 mb-4">
-                <img src="{{ url_for('static', filename='images/chatbot2.png') }}" class="img-fluid" alt="Chatbot em ação">
+                <img src="{{ url_for('static', filename='images/imagem2.jpg') }}" class="img-fluid" alt="Chatbot em ação">
             </div>
         </div>
     </div>

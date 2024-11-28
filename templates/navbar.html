@@ -4,6 +4,7 @@
         <li><a href="{{ url_for('landing_page') }}">Sobre</a></li>
         <li><a href="{{ url_for('contatos') }}">Contatos</a></li>
         {% if 'user_id' in session %}
+            <li><a href="{{ url_for('dashboard') }}">Painel</a></li>
             <li><a href="{{ url_for('logout') }}">Sair</a></li>
         {% else %}
             <li><a href="{{ url_for('login') }}">Login</a></li>
