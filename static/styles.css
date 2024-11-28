@@ -1,0 +1,61 @@
+/* static/styles.css */
+
+/* Estilos gerais para a navbar */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usando flexbox para alinhar os itens da navbar */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    /* Para telas menores que 768px (por exemplo, tablets e celulares) */
+    
+    nav ul {
+        flex-direction: column; /* Alinha os itens da navbar verticalmente */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Adiciona um espaçamento entre os itens da navbar */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Para telas muito pequenas (por exemplo, celulares em modo retrato) */
+    
+    nav ul li a {
+        font-size: 14px; /* Diminuir o tamanho da fonte em telas muito pequenas */
+    }
+}
